@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/windowsHacks favicon.png " />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1">
+
+  <title>Doing more with Windows</title>
+
+  <link rel="canonical" href="https://windowshacks.net/" />
+  <meta name="description"
+    content="windowsHacks gives tips on how to make Windows better with tips about settings, security, apps and laptops." />
+  <meta property="og:title" content="windowsHacks: doing more with Windows" />
+  <meta property="og:description"
+    content="windowsHacks gives tips on how to make Windows better with tips about settings, security, apps and laptops." />
+  <meta property="og:url" content="https://windowshacks.net/" />
+  <meta property="og:site_name" content="windowsHacks" />
+  <meta property="og:image" content="/images/windowsHacks.png">
+  <meta property="og:image:secure_url" content="/images/windowsHacks.png">
+  <meta name="twitter:site" content="@wimpstm">
+  <meta name="twitter:creator" content="@wimpstm">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description"
+    content="windowsHacks gives tips on how to make Windows better with tips about settings, security, apps and laptops." />
+  <meta name="twitter:title" content="windowsHacks: doing more with Windows" />
+
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156034762-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156034762-1', {
+      'anonymize_ip': true
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="language">
+      <span><a href="https://windowshacks.net/">EN</a></span><span><a href="https://windowshacks.net/nl/">NL</a></span>
+    </div>
+    <nav class="navbar">
+      <div class="index">
+        <button class="indexbtn" onclick="indexFunc()"> Index</button>
+        <div class="index-content" id="indexFuncBtn">
+          <a href="#">Start</a>
+          <a href="#settings">Windows settings</a>
+          <a href="#shortcuts">Keyboard shortcuts</a>
+          <a href="#apps">Apps</a>
+          <a href="#mac-a-like">Mac-A-Like</a>
+          <a href="#security">Security</a>
+          <a href="#linux">Development</a>
+          <a href="#about">About & Why</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div class="section">
+      <div class="intro-logo"><img src="images/windowsHacks logo.svg" alt="logo windowsHacks"></div>
+      <p>Windows has become more stable, versatile and better in recent years. It still has its flaws and windowsHacks
+        helps you to make Windows work for you, to make it
+        better.</p>
+      <p>Are you switching from macOS to Windows? The <a href="#mac-a-like">Mac-A-Like</a> section has tips on how to
+        get useful
+        Mac features on Windows.</p>
+    </div>
+
+
+
+    <div class="section" id="settings">
+      <img src="images/Settings.svg" class="delay" data-delay=".2s"
+        alt="windowsHacks icon with a tool to adjust settings">
+      <h2>Windows settings: the basics</h2>
+      <h3>Display</h3>
+      <p>The default setting of Windows tends to display texts, icons and other things quite large. Because of this you
+        may see less on the screen then you want. You change this in <span class="explain">&quot;Settings &gt; "System"
+          >
+          &quot;Display&quot;</span>. With scale and layout you have the option to change both the resolution and the
+        size of text and apps. Choose to adjust the latter. The percentage depends on it screen. If the scaling is at
+        125% then you can try 100%.</p>
+      <h3>Connecting devices</h3>
+      <p>You pair a wireless mouse, headset or other device by going to <span class="explain">&quot;Settings&quot; &gt;
+          &quot;Devices&quot; &gt; &quot;Bluetooth & other devices&quot;</span>. Make sure bluetooth is enabled on the
+        device you want to pair and click &quot;Add bluetooth or other device&quot;.</p>
+      <h3>Touchpad</h3>
+      <p>MacBooks are known for their very good touchpads and they are still the best. Microsoft saw this too and with
+        the addition of Windows Precision Drivers it offers manufacturers the option of adding better touchpads to
+        Windows laptops. Manufacturers such as Dell, Razer and of course Microsoft have good touchpads nowadays. You
+        also have the option to assign tasks to movements on the touchpad such as scrolling or switching desktop. You
+        change this in <span class="explain">&quot;Settings&quot; &gt;
+          &quot;Devices&quot; &gt;
+          &quot;Touchpad&quot;</span>.</p>
+      <h3 id="browser">Browser</h3>
+      <p>Windows comes with Microsoft Edge as the default browser. Internet Explorer is also still included, but this is
+        so obsolete that you should no longer use it because it doesn't support modern web technologies and many
+        websites don't work as they should in Internet Explorer.</p>
+      <p>You are free to install other browsers such as Firefox, Google Chrome or Brave. Microsoft released a new
+        version of Edge in the short term based on Chromium, the engine behind Chrome. It works works very well, offers
+        various privacy options and you can use the Chrome extensions that you are used
+        to.</p>
+      <a class="download" target="blank"
+        href='https://www.mozilla.org/nl/firefox/new/?redirect_source=firefox-com'>Download Firefox</a>
+      <a class="download" target="blank" href='https://www.microsoft.com/en-us/edge'>Download Edge
+        Chromium</a>
+      <h3>Default apps</h3>
+      <p>Windows offers a lot of freedom when choosing default apps for browser, e-mail and more. Go to
+        <span class="explain">&quot;Settings&quot; &gt; &quot;Apps&quot; &gt;
+          &quot;Default apps&quot;</span>.
+      </p>
+      <p>Do you want to change with which program a file type is opened by default? Scroll on the same page to <span
+          class="explain">&quot;Choose default apps by file type"</span>.</p>
+      <h3>Startup apps</h3>
+      <p>Certain programs are started by default when the PC starts up for Windows to function properly. You can add
+        more programs that you want to start by default, because you use them often. Think of apps like a password
+        manager or an app such as Dropbox for synchronizing files. You select which apps this applies to in <span
+          class="explain">&quot;Settings&quot; &gt; &quot;Apps&quot; &gt; &quot;Startup&quot;</span>.</p>
+      <h3>Dark Mode</h3>
+      <p>Do you want Windows in dark mode, but certain apps like OneNote not? No problem. Many apps offer an option for
+        a dark or light mode or for the app to follow the Windows settings. Go to
+        <span class="explain">&quot;Settings&quot; &gt; &quot;Personalization&quot; &gt;
+          &quot;Colors&quot;</span> and select Dark at &quot;Choose your color&quot;.</p>
+
+      <h3>Free up disk space</h3>
+      <p>On both Mac and Windows, it is sometimes a mystery why so much storage is used. Microsoft has created something
+        handy that makes it very easy to see which data can be deleted without that you need to be scared that an
+        important file is thrown away or that you are breaking something.</p>
+      <p>Open <span class="explain">&quot;Settings&quot; &gt; &quot;System&quot; &gt; &quot;Storage&quot; &gt;
+          &quot;Configure storage sense or run it now&quot;</span>.
+      </p>
+      <p>Here you can, for example, set when temporary files are wiped and for which files you want to do that. In
+        In overview click on &quot;Temporary files&quot; and a new windows opens with al temporary files that can be
+        deleted. Select what you want to delete and Windows will do that. Very convenient. </p>
+      <p>You should also check your browser(s) on a regular basis to delete data or let the browser do this in the
+        background.</p>
+      <h3>Add fonts</h3>
+      <p>Microsoft made it very easy to add new fonts to Windows. All you have to is download the font of your choice
+        and in Windows you go to <span class="explain">
+          &quot;Setting&quot; &gt; &quot;Personalization&quot; &gt; &quot;Fonts&quot;</span> eAnd drag the downloaded
+        font here. If you have the font as a ZIP file, you must first unpack it.</p>
+      <h3>32-bit</h3>
+      <p>Windows, unlike macOS, supports 32-bit applications. Apple did announce a while ago that 32-bit applications
+        would no longer work on versions of macOS released as of autumn 2019. You can defend this decision but it is a
+        fact that for many people this is very inconvenient. With Windows you are not bothered by this.</p>
+      <h3>Gaming</h3>
+      <p>If there is one thing that \everyone agrees on then it is that Windows is better t gaming than macOS. There are
+        various reasons for that, but it is a fact and that is why there are more games for Windows. Even if you are not
+        a hardcore gamer, it is nice that you can play the games that you want on Windows. And with regard to the
+        prevision point about 32-bit; many (older) games are all still 32 bit.</p>
+    </div>
+
+
+
+
+    <div class="section" id="shortcuts">
+      <img src="images/keyboard-shortcuts.svg" class="delay" data-delay=".2s" alt="Keyboard for shortcuts">
+      <h1>Keyboard shortcuts</h1>
+      <p>Just like macOS, Windows has many keyboard shortcuts that make life easier, making you work faster while being
+        less dependent on a mouse. An important difference with macOS is that on macOS CMD is the magic key and on
+        Windows that is CRTL and the Windows key. That can be confusing in the beginning, but you get used to it
+        quickly.</p>
+      <p>There are a lot of keyboard shortcuts, but these are the most useful.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Shortcut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alt + Tab</td>
+            <td>Switch app</td>
+          </tr>
+          <tr>
+            <td>Alt + E</td>
+            <td>Open edit</td>
+          </tr>
+          <tr>
+            <td>Alt + F</td>
+            <td>Open file</td>
+          </tr>
+          <tr>
+            <td>Alt + F4</td>
+            <td>Close app</td>
+          </tr>
+          <tr>
+            <td>Ctrl + A</td>
+            <td>Select all</td>
+          </tr>
+          <tr>
+            <td>Ctrl + D</td>
+            <td>Deselect</td>
+          </tr>
+          <tr>
+            <td>Ctrl + C</td>
+            <td>Copy</td>
+          </tr>
+          <tr>
+            <td>Ctrl + X</td>
+            <td>Cut</td>
+          </tr>
+          <tr>
+            <td>Ctrl + V</td>
+            <td>Plakken</td>
+          </tr>
+          <tr>
+            <td>Ctrl + N</td>
+            <td>New item</td>
+          </tr>
+          <tr>
+            <td>Ctrl + T</td>
+            <td>New tab</td>
+          </tr>
+          <tr>
+            <td>Ctrl + W</td>
+            <td>Close tab</td>
+          </tr>
+          <tr>
+            <td>Ctrl + Shift + T</td>
+            <td>Reopen closed tab</td>
+          </tr>
+          <tr>
+            <td>Ctrl + Delete</td>
+            <td>Delete word</td>
+          </tr>
+          <tr>
+            <td>Ctrl + Backspace</td>
+            <td>Delete word</td>
+          </tr>
+          <tr>
+            <td>Windows key + A</td>
+            <td>Open Action Centre</td>
+          </tr>
+          <tr>
+            <td>Windows key + D</td>
+            <td>Minimize all windows</td>
+          </tr>
+          <tr>
+            <td>Windows key + G</td>
+            <td>Open Game Bar and capture screen</td>
+          </tr>
+          <tr>
+            <td>Windos key + P</td>
+            <td>Presentation mode</td>
+          </tr>
+          <tr>
+            <td>Windows key + Shift + S</td>
+            <td>Screenshots</td>
+          </tr>
+          <tr>
+            <td>Windows key + .</td>
+            <td>Emoji + spectial characters</td>
+          </tr>
+          <tr>
+            <td>Windows key + Tab</td>
+            <td>Task view</td>
+          </tr>
+          <tr>
+            <td>Windows key + Ctrl + D</td>
+            <td>New desktop</td>
+          </tr>
+          <tr>
+            <td>Windows key + Ctrl + F4</td>
+            <td>Close dekstop</td>
+          </tr>
+          <tr>
+            <td>Windows key + Ctrl + pijl rechts</td>
+            <td>Next desktop</td>
+          </tr>
+          <tr>
+            <td>Windows key + Ctrl + pijl links</td>
+            <td>Previous desktop</td>
+          </tr>
+          <tr>
+            <td>Windows key + number</td>
+            <td>Opens app on the taskbar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <div class="section" id="apps">
+      <img src="images/apps.svg" class="delay" data-delay=".2s" alt="back with logo for downloading apps">
+      <h2>Apps</h2>
+      <h3>Notes</h3>
+      <p>Where you have many good note taking apps for the Mac such as Bear, Apple Notes, Evernote, OneNote and more,
+        there are a lot less for Windows. For all-round note apps you have to rely on Evernote and OneNote. On new
+        Windows PCs, OneNote is installed by default.</p>
+      <p>Just like on macOS, you have Notion on Windows, but that app has the disadvantage that notes are only offline
+        available when they have been opened recently. Although it is a good app and NOtion goes beyond a note app. You
+        create Kanban boards, to do lists and more. Other apps do this too, but not like Notion.</p>
+      <p>Evernote has fallen behind the competition in recent years.They are working on a major update and might bring
+        them back to the top. It is still one of the better all-rounders. Do you just want an
+        app for taking notes without frills? Then try Simplenote. A good app that does exactly that and it is free.</p>
+      <p>Do you like taking notes with a pen and if you have something like a Surface Pro, then you should try Nebo as
+        alternative to OneNote. It costs € 9.99 and it is worth every penny. You make handwritten notes and Nebo easily
+        converts the note into typed text and it does that almost flawlessly.</p>
+      <a class="download" target="blank" href='https://evernote.com/intl/nl/download'>Download Evernote</a>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/simplenote/9nxqq40ldw3x?activetab=pivot:overviewtab'>Download
+        Simplenote</a>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/nebo/9nblggh4nlb0?activetab=pivot:overviewtab'>Download Nebo</a>
+      <a class="download" target="blank" href='https://www.notion.so/desktop'>Download Notion</a>
+      <h3>To Do</h3>
+      <p>Many productive people write things down so that they don't forget it and it is out of their head. A to do app
+        helps with this. There are many to do apps and Microsoft To Do is among the best. You quickly create new tasks,
+        lists and groups with options such as:</p>
+      <ul>
+        <li>Reminders</li>
+        <li>Notes</li>
+        <li>Attach files</li>
+        <li>Sub-tasks</li>
+        <li>Share lists</li>
+        <li>Assign tasks</li>
+      </ul>
+      <p>Microsoft To Do is versatile with and free. An alternative is Todoist. The basic version of Todoist is free,
+        premium starts at € 3 per month. Both apps are available on Windows, macOS, Android, iPhone and iPad.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/microsoft-to-do-lists-tasks-reminders/9nblggh5r558?activetab=pivot:overviewtab'>Download
+        Microsoft To Do</a>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/todoist-to-do-list-and-task-manager/9nblggh1rl1k?activetab=pivot:overviewtab'>Download
+        Todoist</a>
+      <h3>Writing</h3>
+      <p>A note app is great for taking notes and writing short pieces of text. Writing apps offer more structure and
+        overview when writing texts. Moreover, they use <a
+          href='https://doque.nl/blog/slimmer-schrijven-met-markdown/'>Markdown</a> which lets you write faster and with
+        less distraction. Are you done with a text then you can export or copy it to Word, PDF, Markdown or HTML. </p>
+      <p>Both iA Writer and Typora do an excellent job, with an important difference being that Typora instantly convert
+        Markdown texts to rich text.</p>
+      <p>Typora is officially still a beta version and currently free. iA Writer costs around € 20 for Windows. If you
+        also want to use it mobile on Android or iOS, the app will cost around € 10 there.</p>
+      <a class="download" target="blank" href='https://typora.io/#windows'>Download Typora</a>
+      <a class="download" target="blank" href='https://ia.net/downloads'>Download iA Writer</a>
+      <h3>Netflix</h3>
+      <p>Unlike on macOS, you have a separate app for Netflix on Windows. That does not only mean that you can watch
+        series and movies, but you can also download them for offline use. And the latter is ideal for vacations where
+        you have limited internet access.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/netflix/9wzdncrfj3tj?activetab=pivot:overviewtab'>Download
+        Netflix</a>
+      <h3>Pocket Casts</h3>
+      <p>If you listen to podcasts, Pocket Casts is the app you need. It's just very good app that available is on iOS,
+        Android, macOS, Windows and as a web app. For the last three you need the premium version and that will cost you
+        € 0.99 per month. That will sync everything flawlessly with all your devices. Of course you can also use Spotify
+        and iTunes for podcasts, but Pocket Cast is doing the job better. Its design is nice and you can continue to
+        listen effortlessly on the PC where you stopped on the phone.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/nl-nl/p/pocket-casts-desktop/9pcdbqx582bz?activetab=pivot:overviewtab'>Download
+        Pocket Casts</a>
+      <h3>f.lux</h3>
+      <p>Staring at a screen with blue light the whole evening is not the most pleasant thing for your eyes. Windows has
+        a built-in solution that adjusts the colors of the screen, but if you don't like it or don't like how it works
+        on your PC then there is f.lux. This app goes beyond the built-in solution of Windows, or macOS, and offers you
+        options to adjust colors and times to your liking. You can download it for free and try out.
+      </p>
+      <a class="download" target="blank" href='https://justgetflux.com/'>Download f.lux</a>
+      <h3>Photo editing and graphic design</h3>
+      <p>Photoshop is the best-known photo editing program, but Adobe subscriptions are too expensive for many of us.
+        Affinity has a very good alternative for both Photoshop (Photo), Illustrator (Designer) and InDesign
+        (Publisher). Each app costs around € 50 and that is a one-time fee, which also gives you updates. For most
+        users, the Affinity apps are full substitutes for Adobe.</p>
+      <p>Affinity Photo and Affinity Designer zijn ook beschikbaarare also available op Mac and iPad (separate
+        purchases).</p>
+      <a class="download" target="blank" href='https://affinity.serif.com/en-us/'>Buy Affinity</a>
+      <h3>Social</h3>
+      <p>Are you tired of all the separate social apps such as WhatsApp, Telegram, Skype, Slack and mail? With Franz you
+        combine everything in one app and it is free.</p>
+      <a class="download" target="blank" href='https://meetfranz.com/'>Download Franz</a>
+      <h3>Email</h3>
+      <p>BlueMail is one of the better email apps for Windows. The design ensures that you see which actions you can
+        perform and just like Outlook it has a calendar function. Where with Outlook the agenda covers the entire
+        window, the calendar at BlueMail is shown as a slide-in on the right. This works nice and intuitive. You have a
+        dark mode, can add multiple accounts and all other options that you expect from an email app.</p>
+      <p>For many people the standard mail app from Windows will work fine, if you want more than Outlook and BlueMail
+        are good options.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/blue-mail/9pmhzvm588p4?activetab=pivot:overviewtab'>Download
+        BlueMail</a>
+      <h3>Sticky Notes</h3>
+      <p>With Sticky Notes you make post-its, only digital. It is a handy little app for quick notes. If you use OneNote
+        on your phone or tablet, the sticky notes will also be available there.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/microsoft-sticky-notes/9nblggh4qghw?activetab=pivot:overviewtab'>Download
+        Sticky Notes</a>
+      <h3>Your Phone: integration with Android phones</h3>
+      <p>If you use an Android phone, you can use it on your PC with Your Phone. You view and edit recent images, read
+        and send text, see notifications and perform phone calls wity your PC. Apple offers something similar to the
+        iPhone in macOS. The iPhone does not (yet) work with Your Phone. This app is part of Windows 10.</p>
+      <h3>PWA</h3>
+      <p>Many apps are only available as web application. You can open it every time within a browser, but that is not
+        great. PWAs (Progressive Web Apps) fix this issue . You still open a PWA within a browser, but if you have
+        Chrome or Edge (Chromium) then you can save it as an "app". This works very well for applications such as Google
+        Translate, Google Docs and Evernote. Technically, you still work in a browserbut it feels more like an app and
+        it has itss own icon on the taskbar.
+      </p>
+      <a class="download" target="blank" href='https://developer.microsoft.com/en-us/windows/pwa'>Read more about
+        PWAs</a>
+    </div>
+
+
+
+    <div class="section" id="mac-a-like">
+      <img src="images/Mac-A-Like.svg" class="delay" data-delay=".2s"
+        alt="An apple with the windowsHacks icon for apps that make Windows a bit more like a Mac">
+
+      <h2>Mac-A-Like en apps that are just useful</h2>
+      <p>In recent years, many MacBooks users have made the switch to Windows due to persistent
+        problems with the keyboards on MacBooks and because the reliability of both hardware and software in general
+        became worse. If you have used macOS for years then it takes some time getting used to Windows and not all apps
+        and Mac features are by default available on Windows. With these apps you will make that transition a bit
+        easier.</p>
+      <h3>Quick look</h3>
+      <p>If you select a file, for example an image, in macOS and you tap the space bar then a preview appears. With
+        Quicklook you also get that function on Windows.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/quicklook/9nv4bs3l1h4s?activetab=pivot:overviewtab'>Download
+        QuickLook</a>
+      <h3>Wox: Alfred for Windows</h3>
+      <p>Spotlight and Alfred both boost productivity on the Mac by allowing you to quickly open apps and files or to
+        perform tasks. In Windows you can launch apps quickly by pressing the Windows key and then typing the name of
+        the app. Wox goes beyond that and does for Windows what Alfred does for macOS. You open apps and files with it,
+        but you can also uses it as a calculator. Press Alt + Windows and type what you want to do. Blast is an
+        alternative to Wox, but Wox works better.</p>
+      <a class="download" target="blank" href='http://www.wox.one/'>Download Wox</a>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/blast-search/9nk1hlwhnp8s?activetab=pivot:overviewtab'>Download
+        Blast</a>
+      <h3>WinXCorners: hot corners</h3>
+      <p>On both Linux and Mac you can assign functions to the corners of the screen when you move the mouse to the
+        corner. WinXCorners does that for Windows, although is not entirely identical to that of Linux and Mac.</p>
+      <a class="download" target="blank" href='https://github.com/vhanla/winxcorners'>Download WinXCorners</a>
+      <h3>ShareX: screenshots</h3>
+      <p>Making screen shots on Windows was a drama not too long ago. Luckily Microsoft has improved this feature which
+        you can run by using Windows + Shift + S. If you want more than the default option then there is ShareX. With
+        ShareX you can easily make and share screen shots. It saves the last made screen shot and you can even set what
+        should happen by default after making a screen print.</p>
+      <a class="download" target="blank" href='https://getsharex.com/'>Download ShareX</a>
+      <h3>MacType: better font rendering</h3>
+      <p>If there is one thing that macOS does better than Windows then it is font rendering. Especially with lower
+        resolution screens. MacType solves that and renders fonts better.</p>
+      <a class="download" target="blank" href='https://www.mactype.net/'>Download MacType</a>
+      <h3>SharpKeys</h3>
+      <p>With <a href='#shortcuts'>keyboard shortcuts</a> make life easier, But keyboards and on Windows differ from
+        those on Macs. If you can not or do not want to get used to it, you reassign keys with SharkKeys..</p>
+      <a class="download" target="blank" href='https://www.randyrants.com/category/sharpkeys/'>Download SharpKeys</a>
+      <h3>WinDynamicDesktop</h3>
+      <p>WinDynamicDesktop brings the dynamic desktop backgrounds from macOS to Windows 10. Based on location it
+        determines sunrise and sunset and changes the desktop background throughout the day. You can import or
+        personalize custom themes, and customize the app to the Windows theme color.</p>
+      <a class="download" target="blank" href='WinDynamicDesktop'>Download WinDynamicDesktop</a>
+      <h3>Ditto: clipboard manager</h3>
+      <p>Windows nowadays has a decent clipboard manager (Windows key + V). If that does not do the job for you, you
+        might want to give Ditto a shot.</p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/ditto-clipboard/9nblggh3zbjq?activetab=pivot:overviewtab'>Download
+        Ditto</a>
+      <h3>SmartTaskbar</h3>
+      <p>macOS hides the taskbar (dock) automatically when you maximize a window. SmartTaskbar does that for Windows. It
+        can hide or shrink the taskbar.</p>
+      <a class="download" target="blank" href='https://github.com/ChanpleCai/SmartTaskbar'>Download SmartTaskbar</a>
+      <h3>iCloud</h3>
+      <p>Apple released an improved version of iCloud for Windows in 2019 in collaboration with Microsoft. The functions
+        seem similar to the earlier version with a few new options for syncing files and it just works better. You can
+        synchronize bookmarks with Safari, iCloud documents and photos.
+      </p>
+      <a class="download" target="blank"
+        href='https://www.microsoft.com/en-us/p/icloud/9pktq5699m62?activetab=pivot:overviewtab'>Download iCloud</a>
+    </div>
+
+
+
+    <div class="section" id="security">
+      <img src="images/Security.svg" class="delay" data-delay=".2s" alt="door handle with key combination for security">
+
+      <h2>Security</h2>
+      <p>Security is not the strongest point of Windows by default and there are a few things everyone should do. Even
+        those who have "nothing to hide",because you don't want some random person to be able to install software that
+        follows your activity and sends information about things like making payments.</p>
+      <h3>Passwords</h3>
+      <p>The first step in security is to ensure that your PC is protected with a strong password. If you don't do this,
+        you will leave the door wide open and other security settings will be of little use. A strong password is
+        preferably long. Use for example a sentence that you can remember. Of course you shouldn't reuse passwords,
+        that's why you might need a password manager so you only have to remember one strong password and the password
+        manager takes care of the rest.</p>
+      <p>The most popular password managers are available on Windows, macOS, Android and iOS. Two good password managers
+        are 1Password and LastPass.</p>
+      <a class="download" target="blank" href='https://1password.com/'>Download 1Password</a>
+      <a class="download" target="blank" href='https://www.lastpass.com/'>Downsload LastPass</a>
+      <h3>Updates</h3>
+      <p>Make sure that you install updates. The computer may work well for you, but Updates ensure that security holes
+        are solved and that it is less easy for a malicious person break into your PC. Microsoft has improved the
+        installation of updates in recent years. You can turn off major updates, which means you have a little more
+        control.</p>
+      <p>You can change the settings in &gt; <span class="explain">&quot;Settings&quot; &gt;
+          &quot;Update & Security&quot; &gt; &quot;Windows update&quot;</span>.</p>
+      <h3>Disk encryption</h3>
+      <p>A laptop is not protected enough with only a password, because files are still easily accessible because the
+        hard disk is not encrypted by default in Windows. Apple has beenoffers FileVault on Macs for disk encryption,
+        but you have to enable it yourself. The moment a user doesn't do this then files on a Mac are insufficiently
+        protected also.</p>
+      <p>Disk encryption on a Windows laptop is is a bit cumbersome compared to a MacBook. Microsoft offers Bitlocker,
+        similar to FileVault in macOS, but there is a snag. You have different versions of Windows and Bitlocker is only
+        available from Windows Pro and up. Most people at home have Windows Home and have to encrypt the disk in a
+        different way. Veracrypt is a good alternative. This is an open source program and works somewhat similar to
+        Bitlocker.</p>
+      <p>By enabling Bitlocker or Veracrypt, all data on the hard disk is encrypted, which means that they are not or
+        difficult accessible for third parties. Another reason why a strong Windows password is important, it affects
+        Bitlocker's encryption.</p>
+      <p>Bitlocker only works for hardware with a TPM (Trusted Platform Module) chip. You can check this on you laptop:
+      </p>
+      <div class="explain">
+        <ul>
+          <li>Type Windows key + R (or start PowerShell)</li>
+          <li>Type: tpm.msc</li>
+          <li>A TPM windows opens. If it says "Compatible TPM cannot be found" then your PC doesn't have a TPM chip.
+          </li>
+        </ul>
+      </div>
+      <p>Interested in more about privacy and security? Check a href='https://watchyourhack.com/'>Watch your hack</a>.
+      </p>
+      <a class="download" target="blank" href='https://www.veracrypt.fr/en/Home.html'>Download Veracrypt</a>
+      <h3>Windows security and viruses</h3>
+      <p>Windows Defender has become a decent alternative for separate anti-virus software such as Norton or McAfee.
+        That's great because these programs canhave influence the performance of a
+        PC or interfere with other programs. Of course you shouldn't download and install everything.
+      </p>
+      <p>As a user you get insight into the status of the security in Windows and you can change the settings in
+        &quot;Settings&quot; &gt; &quot;Update & Security&quot; &gt; &quot;Windows Security&quot;. In the window that
+        opens you see which components require your attentention.
+      </p>
+      <img class="explain-image" src="images/Windows security.jpg" alt="Windows security overview">
+      <p>To make things easier for the user, a number of options, such as a firewall, are turned on by default.</p>
+      <h3>Opening files</h3>
+      <p>Downloaded files, or received by email, such as PDF, Excel and Word can contain viruses or malware. Therefor it
+        is safer to open PDF documents in a <a href='#browser'>browser</a> as Edge or Chrome instead of Adobe Acrobat
+        Reader. If you have a Word or Excel document, you can open it in the browser in Google Docs or Sheets.</p>
+      <h3>Dynamic lock</h3>
+      <p>Lots of people don't lock their laptop when they walk away. This means that someone else can access files,
+        install malicious software or make other changes. Locking your PC is easy with the <a href='#shortcuts'>keyboard
+          shortcut</a>
+        "Windows key + L". Another option is that Windows automatically locks your PC when your phone is no longer in
+        the
+        around. This increases security without you having to do anything yourself.</p>
+      <p>You do this by following these steps:</p>
+      <div class="explain">
+        <ol>
+          <li>Connect a phone or tablet as a bluetooth device to your PC. This is done in:
+            &quot;Settings&quot;
+            &gt; &quot;Devices&quot; &gt; &quot;Bluetooth & other devices&quot; &gt; tik op &quot;Add bluetooth or other
+            device&quot;.</li>
+          <li>After connecting the device you go to: &quot;Settings&quot; &gt; &quot;Update & Security&quot; &gt;
+            &quot;Windows security&quot; &gt; &quot;Account protection&quot; and select "Dynamic lock".</li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="section" id="linux">
+      <img src="images/linux-development.svg" class="delay" data-delay=".2s"
+        alt="Linux pinguin for development on Windows and WSL">
+      <h2>Development</h2>
+      <h3>Linux (WSL)</h3>
+      <p>Microsoft made a 360 under CEO, Satya Nadella, and that also applies to Windows. The current Microsoft has
+        fully embraced Open Source and Linux as where the previous CEO, Steve Ballmer, compared Linux with cancer. These
+        days you install Linux as a subsystem on your Windows PC and you can even download different Distros from the
+        Windows Store. With the Linux option, Windows has become more attractive for many developers.</p>
+      <a class="download" target="blank" href='https://docs.microsoft.com/en-us/windows/wsl/install-win10'>Linux on
+        Windows</a>
+      <h3>Package managers</h3>
+      <p>Many users (mostly the more technical people and developers) on Linux and macOS use Homebrew as a package
+        manager, on Windows you have alternatives such as Scoop or Chocolately. The latter is one of the most popular.
+        You install Chocolately with PowerShell. Open PowerShell as administrator and enter:
+      </p>
+      <p class="explain">"Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object
+        System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"</p>
+      <p>If you use WSL, you can also use<a href='https://docs.brew.sh/Homebrew-on-Linux'>Homebrew</a> on Windows.</p>
+      <h3>Code editors</h3>
+      <p>Numerous code editors are available for Windows, including Visual Studio Be a code. There is a good chance that
+        you will not have to adjust your workflow or only a little. Xcode is not avalaible.</p>
+    </div>
+
+
+    <div class="section" id="about">
+      <img src="images/over.svg" class="delay" data-delay=".2s" alt="the digital nomad behind windowsHacks">
+      <h2>About & Why?</h2>
+      <p>windowsHacks is made by <a href="https://wimpostma.com/">Wim Postma</a>. You can send suggestions to <a
+          href='mailto:info@wimpostma.com'>info@wimpostma.com</a> or contact me on <a
+          href='https://twitter.com/wimpstm'>Twitter</a>.</p>
+    </div>
+
+
+
+  </main>
+
+  <footer>
+    <div class="credits">
+
+      <span>© windowsHacks 2020 | <a href="privacy">privacy</a></span>
+    </div>
+  </footer>
+
+  <script src="scripts/delay_loading.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/info.js"></script>
+</body>
+
+</html>
